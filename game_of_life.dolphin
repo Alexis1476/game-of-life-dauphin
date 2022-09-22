@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Dolphin>
+  <Version>1.1.3</Version>
+  <ProcessorName>PSI30</ProcessorName>
+  <ProcessorIPS>1000</ProcessorIPS>
+  <ProcessorStep>C</ProcessorStep>
+  <ProcessorInto>O</ProcessorInto>
+  <PanelMode>Calm</PanelMode>
+  <DisplayBitmap>Y</DisplayBitmap>
+  <DisplayTechno>CRT</DisplayTechno>
+  <KeyboardArrows>Y</KeyboardArrows>
+  <Source>asd</Source>
+  <MemoryData />
+</Dolphin>
