@@ -2,13 +2,13 @@
 <Dolphin>
   <Version>1.1.3</Version>
   <ProcessorName>PSI30</ProcessorName>
-  <ProcessorIPS>1000</ProcessorIPS>
+  <ProcessorIPS>100</ProcessorIPS>
   <ProcessorStep>C</ProcessorStep>
   <ProcessorInto>O</ProcessorInto>
   <PanelMode>Calm</PanelMode>
   <DisplayBitmap>Y</DisplayBitmap>
-  <DisplayTechno>CRT</DisplayTechno>
+  <DisplayTechno>LCD</DisplayTechno>
   <KeyboardArrows>Y</KeyboardArrows>
-  <Source>asd</Source>
-  <MemoryData />
+  <Source>MOVE &lt;tab/&gt;#4, X&lt;tab/&gt;; Position initial en X&lt;br/&gt;MOVE&lt;tab/&gt;#4, Y&lt;tab/&gt;; Position initial en Y&lt;br/&gt;&lt;tab/&gt;&lt;br/&gt;INIT:&lt;br/&gt;&lt;tab/&gt;CALL&lt;tab/&gt;_SetPixel&lt;tab/&gt;; Allume le pixel&lt;tab/&gt;&lt;br/&gt;&lt;tab/&gt;COMP&lt;tab/&gt;#6, X &lt;tab/&gt;; Si 3 pixel allumés&lt;br/&gt;&lt;tab/&gt;JUMP,EQ&lt;tab/&gt;STEP2&lt;br/&gt;&lt;tab/&gt;INC&lt;tab/&gt;X&lt;tab/&gt;; Incrémente de 1&lt;br/&gt;&lt;tab/&gt;JUMP&lt;tab/&gt;INIT&lt;br/&gt;&lt;br/&gt;STEP2:&lt;br/&gt;&lt;tab/&gt;INC&lt;tab/&gt;Y&lt;br/&gt;&lt;tab/&gt;CALL&lt;tab/&gt;_SetPixel&lt;br/&gt;&lt;tab/&gt;ADD&lt;tab/&gt;#2, X&lt;br/&gt;&lt;tab/&gt;CALL&lt;tab/&gt;_SetPixel&lt;br/&gt;&lt;tab/&gt;MOVE&lt;tab/&gt;#6, X&lt;br/&gt;&lt;tab/&gt;INC&lt;tab/&gt;Y&lt;br/&gt;&lt;tab/&gt;CALL&lt;tab/&gt;STEP3&lt;br/&gt;&lt;br/&gt;STEP3:&lt;br/&gt;&lt;tab/&gt;CALL&lt;tab/&gt;_SetPixel&lt;br/&gt;&lt;tab/&gt;INC&lt;tab/&gt;X&lt;br/&gt;&lt;tab/&gt;COMP&lt;tab/&gt;#9, X&lt;br/&gt;&lt;tab/&gt;JUMP,LS&lt;tab/&gt;STEP3&lt;br/&gt;&lt;tab/&gt;&lt;br/&gt;&lt;tab/&gt;&lt;br/&gt;&lt;tab/&gt;&lt;br/&gt;</Source>
+  <MemoryData>5204530401081572061200102A1000042B010815A20201081552062B01001F0108152A720916001F</MemoryData>
 </Dolphin>
