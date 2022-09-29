@@ -2,7 +2,7 @@
 <Dolphin>
   <Version>1.1.3</Version>
   <ProcessorName>PSI30</ProcessorName>
-  <ProcessorIPS>100</ProcessorIPS>
+  <ProcessorIPS>1000</ProcessorIPS>
   <ProcessorStep>C</ProcessorStep>
   <ProcessorInto>O</ProcessorInto>
   <PanelMode>Calm</PanelMode>
@@ -10,6 +10,6 @@
   <DisplayTechno>LCD</DisplayTechno>
   <KeyboardArrows>N</KeyboardArrows>
   <Rem>&lt;b&gt;Introduction&lt;/b&gt;&lt;br/&gt;Le jeu de la vie est un automate cellulaire imaginé par John Horton Conway en 1970.&lt;br/&gt;Le jeu commence avec une situation initiale définie dans le code.&lt;br/&gt;&lt;b&gt;Les règles du jeu sont les suivantes:&lt;/b&gt;&lt;br/&gt;- Mort par sous-population Si une cellule vivante est trop isolée (0 ou 1 voisine) alors elle meurt à l'évolution suivante. &lt;br/&gt;-Mort par surpopulation S'il est entouré de trop de cellules (4 voisines ou plus), il meurt à la génération suivante. &lt;br/&gt;-S'il est raisonnablement entouré (2 ou 3 voisins), il reste en vie. &lt;br/&gt;-Naissance par reproduction Si une cellule morte est entourée de 3 cellules vivantes, elle devient vivante (elle naît) à l'évolution suivante.</Rem>
-  <Source>; ETML - CID3A&lt;br/&gt;; Auteur : Alexis Rojas&lt;br/&gt;; Date : 2022 &lt;br/&gt;; Description : Projet jeu de la vie pour le module I242&lt;br/&gt;&lt;br/&gt;&lt;tab/&gt;.LOC&lt;tab/&gt;0&lt;br/&gt;&lt;tab/&gt;CALL&lt;tab/&gt;INIT&lt;br/&gt;&lt;tab/&gt;CALL&lt;tab/&gt;COPY_SCREEN&lt;br/&gt;&lt;tab/&gt;CALL &lt;tab/&gt;LOOP&lt;br/&gt;&lt;br/&gt;; Situation initial&lt;br/&gt;INIT:&lt;br/&gt;&lt;tab/&gt;MOVE&lt;tab/&gt;#B&amp;apos;11100000, _BITMAP+21&lt;br/&gt;&lt;tab/&gt;MOVE&lt;tab/&gt;#B&amp;apos;00101000, _BITMAP+25&lt;br/&gt;&lt;tab/&gt;MOVE&lt;tab/&gt;#B&amp;apos;00111100, _BITMAP+29&lt;br/&gt;&lt;tab/&gt;RET&lt;br/&gt;&lt;br/&gt;COPY_SCREEN:&lt;br/&gt;&lt;tab/&gt;&lt;tab/&gt;&lt;br/&gt;&lt;br/&gt;LOOP:</Source>
-  <MemoryData>DCE00C95DC280C99DC3C0C9D02</MemoryData>
+  <Source>; ETML - CID3A&lt;br/&gt;; Auteur : Alexis Rojas&lt;br/&gt;; Date : 2022 &lt;br/&gt;; Description : Projet jeu de la vie pour le module I242&lt;br/&gt;&lt;br/&gt;&lt;tab/&gt;.LOC&lt;tab/&gt;0&lt;br/&gt;&lt;tab/&gt;CALL&lt;tab/&gt;INIT&lt;br/&gt;&lt;tab/&gt;CALL &lt;tab/&gt;LOOP&lt;br/&gt;&lt;br/&gt;; Situation initial&lt;br/&gt;INIT:&lt;br/&gt;&lt;tab/&gt;MOVE&lt;tab/&gt;#B&amp;apos;11100000, _BITMAP+21&lt;br/&gt;&lt;tab/&gt;MOVE&lt;tab/&gt;#B&amp;apos;00101000, _BITMAP+25&lt;br/&gt;&lt;tab/&gt;MOVE&lt;tab/&gt;#B&amp;apos;00111100, _BITMAP+29&lt;br/&gt;&lt;tab/&gt;RET&lt;tab/&gt;&lt;tab/&gt;&lt;br/&gt;&lt;br/&gt;; Boucle du jeu&lt;br/&gt;LOOP:&lt;br/&gt;&lt;tab/&gt;CALL&lt;tab/&gt;CHECK_NEIGHBORS&lt;tab/&gt;; Si la cellule est vivante&lt;br/&gt;&lt;tab/&gt;INC&lt;tab/&gt;X&lt;br/&gt;&lt;tab/&gt;COMP&lt;tab/&gt;_BITMAPHEIGHT, X&lt;tab/&gt;; Si fin de ligne&lt;br/&gt;&lt;tab/&gt;JUMP,EQ&lt;tab/&gt;INC_Y&lt;tab/&gt;&lt;tab/&gt;; Descendre une ligne&lt;br/&gt;&lt;tab/&gt;JUMP&lt;tab/&gt;LOOP&lt;br/&gt;&lt;br/&gt;;Descende d&amp;apos;une ligne&lt;br/&gt;INC_Y:&lt;br/&gt;&lt;tab/&gt;INC&lt;tab/&gt;Y&lt;br/&gt;&lt;tab/&gt;CLR&lt;tab/&gt;X&lt;br/&gt;&lt;tab/&gt;JUMP&lt;tab/&gt;LOOP&lt;br/&gt;&lt;br/&gt;; Compte le nombre de voisins vivants&lt;br/&gt;CHECK_NEIGHBORS:&lt;br/&gt;&lt;tab/&gt;CALL&lt;tab/&gt;_SetPixel&lt;br/&gt;&lt;tab/&gt;RET&lt;br/&gt;</Source>
+  <MemoryData>010006010013DCE00C95DC280C99DC3C0C9D020100252AFA00181200201000132B2210001301081502</MemoryData>
 </Dolphin>
