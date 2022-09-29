@@ -10,6 +10,6 @@
   <DisplayTechno>LCD</DisplayTechno>
   <KeyboardArrows>N</KeyboardArrows>
   <Rem>Le jeu de la vie est un automate cellulaire imaginé par John Horton Conway en 1970 (voir fr.wikipedia.org/wiki/Jeu_de_la_vie).&lt;br/&gt;Après avoir cliqué [RUN], vous pouvez mettre des cellules dans l&amp;apos;écran bitmap avec la souris.</Rem>
-  <Source>; Situation initial&lt;br/&gt;INIT:&lt;br/&gt;&lt;tab/&gt;MOVE&lt;tab/&gt;#B&amp;apos;11100000, _BITMAP+21&lt;br/&gt;&lt;tab/&gt;MOVE&lt;tab/&gt;#B&amp;apos;00101000, _BITMAP+25&lt;br/&gt;&lt;tab/&gt;MOVE&lt;tab/&gt;#B&amp;apos;00111100, _BITMAP+29&lt;br/&gt;&lt;tab/&gt;RET&lt;br/&gt;</Source>
+  <Source>; ETML - CID3A&lt;br/&gt;; Auteur : Alexis Rojas&lt;br/&gt;; Date : 2022 &lt;br/&gt;; Description : Projet jeu de la vie pour le module I242&lt;br/&gt;&lt;br/&gt;&lt;tab/&gt;.LOC&lt;tab/&gt;0&lt;br/&gt;&lt;tab/&gt;CALL&lt;tab/&gt;INIT&lt;br/&gt;&lt;tab/&gt;CALL&lt;tab/&gt;COPY_SCREEN&lt;br/&gt;&lt;tab/&gt;CALL &lt;tab/&gt;LOOP&lt;br/&gt;&lt;br/&gt;; Situation initial&lt;br/&gt;INIT:&lt;br/&gt;&lt;tab/&gt;MOVE&lt;tab/&gt;#B&amp;apos;11100000, _BITMAP+21&lt;br/&gt;&lt;tab/&gt;MOVE&lt;tab/&gt;#B&amp;apos;00101000, _BITMAP+25&lt;br/&gt;&lt;tab/&gt;MOVE&lt;tab/&gt;#B&amp;apos;00111100, _BITMAP+29&lt;br/&gt;&lt;tab/&gt;RET&lt;br/&gt;&lt;br/&gt;COPY_SCREEN:&lt;br/&gt;&lt;tab/&gt;&lt;tab/&gt;&lt;br/&gt;&lt;br/&gt;LOOP:</Source>
   <MemoryData>DCE00C95DC280C99DC3C0C9D02</MemoryData>
 </Dolphin>
