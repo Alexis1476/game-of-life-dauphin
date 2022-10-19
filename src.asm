@@ -9,7 +9,7 @@ PIXELSON		= H'703	; Nombre de pixels voisins en vie
 SCREENCOPY	= H'600	; Adresse de la pile 
 SCREENSIZE      	= 96	; Taille de l'écran en octects 
  
-	CALL	PUTMOTIF 
+	CALL	INITIAL_SITUATION 
  
 ; Boucle du jeu 
 GAMELOOP : 	 
@@ -223,8 +223,10 @@ LOOP2:
 	RET 
  
 ; Affiche une figure dans l'écran 
-PUTMOTIF:  
-	MOVE	#H'40, _BITMAP+41 
-	MOVE	#H'10, _BITMAP+45 
-	MOVE	#H'CE, _BITMAP+49 
+INITIAL_SITUATION:  
+	MOVE	#B'01111100, _BITMAP+41
+	MOVE	#B'01111100, _BITMAP+45
+	MOVE	#B'01111100, _BITMAP+49
+	MOVE	#B'01111100, _BITMAP+53
+	MOVE	#B'01111100, _BITMAP+57
 	RET
